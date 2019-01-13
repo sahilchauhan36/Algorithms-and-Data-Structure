@@ -1,6 +1,7 @@
 # Algorithms-and-Data-Structure
 
 This Section of the repository basically deals with various Data Structures and Algorithms.
+
 Various Algorithms
 - Sorting Algorithms
 - Backtracking Algorithms
