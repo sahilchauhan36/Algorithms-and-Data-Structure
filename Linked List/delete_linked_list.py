@@ -11,7 +11,6 @@ class linked_list:
 
   # Module to insert an element in the linked list 
   def insert(self, data):
-    print("Insert Element: %s" % data)
     Node = node(data)
     if self.head == None:
       self.head = Node
@@ -23,24 +22,30 @@ class linked_list:
 
   # Module to print the linked list
   def print_list(self):
+    print('\t[', end=' ')
     temp_node = self.head
-    while temp_node.next != None:
-      print("Element in the list : %s" % temp_node.data)
+    while temp_node != None:
+      print("%s" % temp_node.data, end=' ,')
       temp_node = temp_node.next
+    print('\b]')
 
+  # Module to delete a linked list 
   def delete_list(self):
     current_node = self.head
     while current_node != None:
       next_node = current_node.next
-      del current_node
-      current_node = next_node
-    
+      del current_node.data
+      current_node = next_node 
+    self.head = None 
 
 if __name__=='__main__':
-  print("Create a Linked List Object")
+  # Create a linked list
+  print("1. Create a Linked List Object")
   ll_obj = linked_list()
   
+
   # Update head of the linked list 
+  print("2. Insert Elements in Linked list")
   ll_obj.insert(1)
   ll_obj.insert(2)
   ll_obj.insert(3)
@@ -49,11 +54,11 @@ if __name__=='__main__':
   ll_obj.insert(6)
 
   # Print the list
-  print("Linked List before Deletion") 
+  print("3. Linked List before Deletion") 
   ll_obj.print_list()
   
-  print("Call Linked List Deletion")
+  print("4. Calling Linked List Deletion")
   ll_obj.delete_list()
 
-  print("Linked List after Deletion")
+  print("5. Linked List after Deletion")
   ll_obj.print_list()
