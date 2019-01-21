@@ -11,7 +11,7 @@ class linked_list:
 
   # Module to insert an element in the linked list 
   def insert(self, data):
-    print("Insert Element: %s" % data)
+    print("%s" % data, end = ' ')
     Node = node(data)
     if self.head == None:
       self.head = Node
@@ -19,12 +19,14 @@ class linked_list:
       temp_node = self.head
       while temp_node.next != None: 
         temp_node = temp_node.next
+      temp_node.next = Node
 
   # Module to print the linked list
   def print_list(self):
+    print("\nPrint Linked List")
     temp_node = self.head
-    while temp_node.next != None:
-      print("Element in the list : " + temp_node.data)
+    while temp_node != None:
+      print("%s" % temp_node.data, end=' ')
       temp_node = temp_node.next
 
 
@@ -33,10 +35,9 @@ if __name__=='__main__':
   print("Create a Linked List Object")
   ll_obj = linked_list()
   
-  # Update head of the linked list 
+  # Insert Elements in linked list 
+  print("Insert elements in Linked List")
   ll_obj.insert(1)
-
-  # Insert the remaining elements 
   ll_obj.insert(2)
   ll_obj.insert(3)
   ll_obj.insert(4)
