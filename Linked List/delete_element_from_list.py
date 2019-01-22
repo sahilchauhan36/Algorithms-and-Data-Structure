@@ -47,6 +47,25 @@ class linked_list:
     temp = current_node.next
     current_node.next = temp.next
     del current_node
+  
+  def delete_value_from_list(self, value):
+    # Handling Corner case i.e. if first element is having the value to be deleted
+    while self.head.data == value:
+      temp = self.head 
+      self.head = self.head.next
+      del temp    
+    
+    # check while traversing if the value is found and update pointers accordingly
+    current_node = self.head
+    prev_node = None
+    while current_node != None:
+      if current_node.data == value:
+        temp = current_node
+        prev_node.next = current_node.next
+        del temp.data
+      prev_node = current_node
+      current_node = prev_node.next
+      
     
 
 if __name__=='__main__':
@@ -71,5 +90,8 @@ if __name__=='__main__':
   print("4. Calling Linked List Element Deletion")
   ll_obj.delete_element_from_list(3)
 
-  print("5. Linked List after Deletion")
+  print("5. Calling Linked List Value Deletion")
+  ll_obj.delete_value_from_list(1)
+
+  print("6. Linked List after Deletion")
   ll_obj.print_list()
