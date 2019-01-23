@@ -1,4 +1,4 @@
-# This program explains the Deletion Functionality of the Linked List
+# This program explains the Linked list Length program
 
 class node:
   def __init__(self, data):
