@@ -46,6 +46,7 @@ if __name__=='__main__':
 
   # Update head of the linked list 
   print("2. Insert Elements in Linked list")
+  """For Demo Inserting Elements in order"""
   ll_obj.insert(1)
   ll_obj.insert(2)
   ll_obj.insert(3)
