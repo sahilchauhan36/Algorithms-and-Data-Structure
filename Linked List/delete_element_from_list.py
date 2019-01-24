@@ -90,7 +90,7 @@ if __name__=='__main__':
   print("4. Calling Linked List Element Deletion")
   ll_obj.delete_element_from_list(3)
 
-  print("5. Calling Linked List Value Deletion")
+  print("5. Calling Linked List Value Deletion ")
   ll_obj.delete_value_from_list(1)
 
   print("6. Linked List after Deletion")
