@@ -42,7 +42,7 @@ class linked_list:
     last_element = fast_pointer
     
     while current_pointer != last_element:
-      #print("current_pointer %s" % current_pointer.data)
+      # Check if the current element is odd or even 
       if current_pointer.data%2 == 0:
         if self.head is current_pointer:
           self.head = next_pointer
@@ -56,7 +56,7 @@ class linked_list:
         prev_pointer = current_pointer
       current_pointer = next_pointer
       next_pointer = current_pointer.next
-      print("[pr:%s, cu:%s, ne:%s]" %(prev_pointer.data, current_pointer.data,next_pointer.data))
+      print("[previous:%s, current:%s, next:%s]" %(prev_pointer.data, current_pointer.data,next_pointer.data))
       self.print_list()
 
 if __name__=='__main__':
