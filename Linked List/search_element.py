@@ -1,4 +1,4 @@
-# This program explains the Deletion Functionality of the Linked List
+# This program explains the Search Functionality of the Linked List
 
 class node:
   def __init__(self, data):
