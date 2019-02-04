@@ -56,35 +56,38 @@ class linked_list:
 
   def find_intersection(self, linked_list_obj):
     length_1 = self.length()
-    print("[Length 1 : %s]" % length_1)
+    #print("[Length 1 : %s]" % length_1)
     length_2 = linked_list_obj.length()
-    print("[Length 2 : %s]" % length_2)
+    #print("[Length 2 : %s]" % length_2)
  
     count = abs(length_1 - length_2)
+    # If first List is longer 
     if length_1 > length_2:
       current_node = self.head
       while count != 0:
         current_node = current_node.next
         count = count - 1
       current_node_2 = linked_list_obj.head
-
-    else:
+    else: # If Second List is longer
       current_node = linked_list_obj.head
       while count != 0:
         current_node = current_node.next
         count = count - 1
-      
       current_node_2 = self.head
 
+    # Comman for both scenarios
+    # Traverse Both the list parallely and compare the nodes of both the lists
     while current_node_2 != None and current_node != None:
       if current_node.data == current_node_2.data:
         print("Intersection Point is  %s" % current_node.data)
         return
       current_node = current_node.next
       current_node_2 = current_node_2.next
-      if current_node_2 == None and current_node == None:
-        print("No element found !")
-        return
+
+    # If there is no intersection point 
+    if current_node_2 == None and current_node == None:
+      print("No element found !")
+      return
 
 if __name__=='__main__':
   # Create a linked list
@@ -117,12 +120,19 @@ if __name__=='__main__':
   ll_obj_2.insert(44)
   ll_obj_2.insert(55)
   ll_obj_2.insert(66)
-  ll_obj_2.create_intersection(ll_obj)
 
   # Print the list
   print("6. Linked List 2") 
   ll_obj_2.print_list()
-  
+
+  # Create Intersection  
+  print("7. Create Intersection in Linked list 2")
+  ll_obj_2.create_intersection(ll_obj)
+
+  # Print the list
+  print("8. Linked List 2 after intersection creation") 
+  ll_obj_2.print_list()
+
   # Get Intersection
-  print("7. Find Intersection") 
+  print("9. Find Intersection") 
   ll_obj.find_intersection(ll_obj_2)
