@@ -4,7 +4,7 @@ e.g. If Linked List = [1,2,3,4,5,6]
      Output = [2,1,4,3,6,5]
 """
 
-
+ 
 class node:
   def __init__(self, data):
     self.data = data
