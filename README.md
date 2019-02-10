@@ -19,4 +19,4 @@ Various Data Structures
  - Others
  
 #### Please Refer Wiki of this Repo for detailed information.
-https://github.com/sahilchauhan36/Algorithms-and-Data-Structure/wiki/Home/
+Wiki URL: https://github.com/sahilchauhan36/Algorithms-and-Data-Structure/wiki/Home/
