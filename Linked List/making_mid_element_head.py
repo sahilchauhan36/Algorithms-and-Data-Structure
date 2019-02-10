@@ -1,4 +1,4 @@
-# This program explains the
+# This program explains the program to make mid_element HEAD of the linked list.
 
 class node:
   def __init__(self, data):
