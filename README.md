@@ -18,5 +18,5 @@ Various Data Structures
  - Hashmap
  - Others
  
-Please Refer Wiki of this Repo for detailed information.
+#### Please Refer Wiki of this Repo for detailed information.
 https://github.com/sahilchauhan36/Algorithms-and-Data-Structure/wiki/Home/
