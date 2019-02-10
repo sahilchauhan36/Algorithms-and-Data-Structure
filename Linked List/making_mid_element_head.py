@@ -28,24 +28,7 @@ class linked_list:
       print("%s" % temp_node.data, end=' ,')
       temp_node = temp_node.next
     print('\b]')
-
-  # Module to delete a linked list 
-  def delete_list(self):
-    current_node = self.head
-    while current_node != None:
-      next_node = current_node.next
-      del current_node.data
-      current_node = next_node 
-    self.head = None 
-
-  def length(self):
-    length = 0
-    current_node = self.head
-    while current_node != None:
-      current_node = current_node.next
-      length = length + 1
-    return length
-  
+ 
   def make_mid_head(self):
     fast_pointer = self.head
     slow_pointer = self.head
