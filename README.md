@@ -18,5 +18,4 @@ Various Data Structures
  - Hashmap
  - Others
  
- For Simplicity, The Algorithms are explained in easy manner taking minimal number of inputs required.
- Documentation is also provided in the first a few lines of the every file which explains the functionality of the algorithm or data structure.
+ ###Please Refer Wiki of this Repo for detailed information.
