@@ -1,7 +1,7 @@
 """
 This program explains the program to delete alternate nodes in the linked list 
 Linked list can be have odd number of elements or even number of elements. 
-So, It has been run for both the scenarios.
+So, It has been run for both the scenarios. 
 """
 
 class node:
