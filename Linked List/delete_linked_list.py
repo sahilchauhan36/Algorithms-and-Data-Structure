@@ -33,7 +33,7 @@ class linked_list:
   def delete_list(self):
     current_node = self.head
     while current_node != None:
-      next_node = current_node.next
+      next_node = current_node.next 
       del current_node.data
       current_node = next_node 
     self.head = None 
